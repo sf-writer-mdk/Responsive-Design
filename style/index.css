@@ -14,10 +14,6 @@ font-family: 'Open Sans', sans-serif; - links and headers
 font-family: 'Roboto', sans-serif; - paragraphs
 */
 
-
-
-
-
 /* Add CSS styling here */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -25,48 +21,129 @@ font-family: 'Roboto', sans-serif; - paragraphs
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1.5;
+  line-height: 1.5;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
@@ -75,11 +152,8 @@ table {
 }
 
 body {
-  background: #f3b05a
+  background: #f3b05a;
 }
-
-
-
 
 /* Utilities */
 
@@ -94,14 +168,17 @@ button a {
   font-size: 1.5rem;
 }
 
-h1, a, .name, footer p {
+h1,
+a,
+.name,
+footer p,
+.bio {
   font-family: 'Open Sans', sans-serif;
 }
 
-.bio {
+/* .bio {
   font-family: 'Roboto', sans-serif;
-}
-
+} */
 
 /* Header */
 
@@ -156,8 +233,8 @@ header nav a {
   display: flex;
   flex-direction: column;
   width: 50%;
-  justify-content:space-evenly;
-  align-items:flex-start;
+  justify-content: space-evenly;
+  align-items: flex-start;
   padding-left: 2rem;
 }
 
@@ -166,7 +243,7 @@ header nav a {
 }
 
 .section-1 button a {
-  padding:  10px 10px;
+  padding: 10px 10px;
   text-decoration: none;
   font-size: 1.5rem;
   display: inline-block;
@@ -206,14 +283,13 @@ header nav a {
 }
 
 .section-2-gallery p {
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
-
 
 /* footer */
 
 footer {
-  background:  #f4874b;
+  background: #f4874b;
 }
 
 footer div {
@@ -225,7 +301,8 @@ footer p {
   padding-top: 30px;
 }
 
-footer p, button {
+footer p,
+button {
   margin: 50px 0;
 }
 
@@ -233,8 +310,6 @@ footer button {
   margin-top: 0;
   padding: 15px 25px;
 }
-
-
 
 @media (max-width: 1100px) {
   .section-1 .image-about-container {
@@ -259,9 +334,6 @@ footer button {
   }
 }
 
-
-
-
 @media (max-width: 800px) {
   .section-2-gallery {
     display: flex;
@@ -270,14 +342,12 @@ footer button {
     /* align-items: center; */
     width: 100%;
     align-items: center;
-
-
+  }
+  .section-1 .about p {
+    font-size: 2.5rem;
+    text-align: left;
+  }
 } /* ending branch of media query  */
-
-
-
-
-
 
 @media (max-width: 500px) {
   header nav {
@@ -296,11 +366,12 @@ footer button {
 
   .section-1 .about p {
     font-size: 2.5rem;
-    text-align:left;
+    text-align: left;
   }
 
-  .section-1 .about p:last-child{
-    font-size: 1.2rem;
+  .section-1 .about p:last-child {
+    font-size: 2rem;
+    text-align: left;
   }
 
   nav a {
@@ -327,6 +398,4 @@ footer button {
   .section-2-gallery div {
     width: 50%;
   }
-
-
 } /* ending branch of media query  */
